@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="current-page" href="projects.html">Projects</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </header>
+    <main>
+      <h1 class="title-text">Projects</h1>
+      <p>Here are some of my current and past projects.</p>
+      <div class="project-card-space">
+        <div class="project-card">
+          <img src="project1.jpg" class="project-card-image">
+          <h3>Simulence Front End</h3>
+          <p>This project was done for CSC301. Our team developed using the Vue.js framework</p>
+        </div> 
+        <div class="project-card">
+          <img src="project2.jpg" class="project-card-image">
+          <h3>Calculator</h3>
+          <p>This calculator was done in React. It was a project for a FreeCodeCamp certificate</p>
+        </div>
+        <div class="project-card">
+          <img src="project3.jpg" class="project-card-image">
+          <h3>React Stopwatch</h3>
+          <p>This project is a React stopwatch. It was built for Shopify's internship application.</p>
+        </div>
+      </div>
+      <h2 class="title-text">Need a full stack web developer? Tell me about your project.</h2>
+      <form action="https://postman-echo.com/post">
+        <fieldset>
+          <label for="email">Please enter your email</label>
+          <input id="email" name="email" type="text" placeholder="example@gmail.com" required/>
+          <label>What type of project are you interested in?</label>
+          <select required>
+            <option value="">(select one)</option>
+            <option value="1">Personal Website</option>
+            <option value="2">eCommerce</option>
+            <option value="3">Game</option>
+          </select>
+          <label>Could you give some details about your project?</label>
+          <textarea required rows="8" cols="40" placeholder="Enter your project concept here"></textarea>
+          <label for="attachment">Add any relevant documents here!</label>
+          <input required type="file" id="attachment" name="attachment">
+          <label><input required value="yesno" id="yesno" name="yesno" type="checkbox"></input>You agree to receive emails from me</label>
+        </fieldset>
+        <input required id="submit" type="submit" value="Submit" />
+      </form>
+    </main>
+    <footer id="footer">
+      <p class="footer-text">Copyright 2024 by wormejar.</p>
+    </footer>
+  </body>
+</html>
